@@ -1,7 +1,7 @@
 // imports
 importScripts("js/sw-utils.js");
 
-const STATIC_CACHE = "static-v3";
+const STATIC_CACHE = "static-v4";
 const DYNAMIC_CACHE = "dynamic-v1";
 const INMUTABLE_CACHE = "inmutable-v1";
 
@@ -9,6 +9,7 @@ const APP_SHELL = [
   //   "/",
   "index.html",
   "css/style.css",
+  "css/fa.css",
   "img/favicon.ico",
   "img/avatars/hulk.jpg",
   "img/avatars/ironman.jpg",
@@ -25,6 +26,12 @@ const APP_SHELL_INMUTABLE = [
   "https://use.fontawesome.com/releases/v5.3.1/css/all.css",
   "css/animate.css",
   "js/libs/jquery.js",
+  "webfonts/fa-brands-400.eot",
+  "webfonts/fa-brands-400.woff2",
+  "webfonts/fa-brands-400.woff",
+  "webfonts/fa-brands-400.ttf",
+  "webfonts/fa-solid-900.woff2",
+  "webfonts/fa-brands-400.svg",
 ];
 
 self.addEventListener("install", (e) => {
